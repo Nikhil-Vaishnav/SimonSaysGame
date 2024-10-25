@@ -1,5 +1,13 @@
 body{
     text-align: center;
+    background-color: antiquewhite;
+}
+h1{
+    /* background-color: antiquewhite; */
+    color: blue;
+    /* text-decoration: tomato; */
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .btn{
