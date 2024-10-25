@@ -1,54 +1,78 @@
-body{
+body {
     text-align: center;
     background-color: antiquewhite;
+    margin: 0; /* Add margin reset */
+    padding: 0; /* Add padding reset */
 }
-h1{
-    /* background-color: antiquewhite; */
+
+h1 {
     color: blue;
-    /* text-decoration: tomato; */
-    font-size: 45px;
+    font-size: 3vw; /* Responsive font size */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.btn{
-    height: 200px;
-    width: 200px;
+.btn {
+    height: 15vw; /* Use viewport width for responsive height */
+    width: 15vw; /* Use viewport width for responsive width */
     border-radius: 20%;
     border: 10px solid black;
     margin: 2.5rem;
-    
+    display: flex; /* Center content inside button */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    font-size: 1.5rem; /* Adjust button text size */
 }
 
-.btn-container{
+.btn-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow buttons to wrap */
     margin: 1rem;
 }
 
-.red{
+.red {
     background-color: #f99b45;
-
 }
 
-.yellow{
+.yellow {
     background-color: #d95980;
-
 }
 
-.green{
-
+.green {
     background-color: green;
 }
 
-.purple{
+.purple {
     background-color: purple;
-
 }
 
-.flash{
+.flash {
     background-color: white;
 }
 
-.userflash{
+.userflash {
     background-color: green;
+}
+
+/* Media Queries for further responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4vw; /* Adjust font size for smaller screens */
+    }
+    .btn {
+        height: 20vw; /* Adjust button height for smaller screens */
+        width: 20vw; /* Adjust button width for smaller screens */
+        font-size: 1.2rem; /* Adjust button text size */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 5vw; /* Further adjust font size for mobile devices */
+    }
+    .btn {
+        height: 25vw; /* Further adjust button height for mobile devices */
+        width: 25vw; /* Further adjust button width for mobile devices */
+        font-size: 1rem; /* Further adjust button text size */
+    }
 }
